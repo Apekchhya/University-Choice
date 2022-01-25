@@ -1,0 +1,15 @@
+{% extends 'main.html' %}
+{% block content %}
+
+<div class = 'container'>
+    
+        <form method="link" action = '{%url 'home' %}' >
+            {% csrf_token %}
+            <input type='submit' name='back' value = "Go Back"/>
+            
+        
+        </form>
+
+<h1> Chance of Admission is {{result}} % </h1>
+{% endblock content %}
+</div>
