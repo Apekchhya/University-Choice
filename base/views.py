@@ -1,7 +1,6 @@
 import pickle
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
-# from sqlalchemy import false
 
 # Create your views here.
 def home(request):
@@ -11,7 +10,7 @@ def home(request):
 
 def result(request):
     
-    model = pickle.load(open(r'C:\Users\sudee\Downloads\picklefil.pkl','rb'))
+    model = pickle.load(open(r'C:\Users\sudee\Desktop\regression\picklefil.pkl','rb'))
     print(model)
     lis = []
     lis.append(float(request.GET.get('GRE_score', False)))
