@@ -38,85 +38,79 @@
       }
       
       .container{
-          {% comment %} margin-top: 30px; {% endcomment %}
-          margin-left: 400px;
-          margin-right: 400px;
+          {% comment %} margin-left:400px;
+          margin-right:400px; {% endcomment %}
+          {% comment %} margin:auto; {% endcomment %}
+          margin-left:30%;
+          margin-right:30%;
+
+          height:200px;
+          {% comment %} width:40%; {% endcomment %}
           background-color: white;
+          align:center;
           -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.5);
           box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.5);
-          padding: 30px 20px 90px 20px;
-          display:flex;
-          justify-content:center;
+          padding: 50px 5% 90px 5%;
       }
     
       input[type=text]{
-        width:200px;
+
+        width:200px%;
         border-radius:10px;
         height:30px;
         text-align:center;
-        margin: 20px 10px 10px 10px;
+        margin: 0% 0% 20% 0%;
         border-width:thin;
         background-color:white;
         border-color:lightgreen;
-        text-color:black;
-        display:flex;
-        justify-content:center;
-    
+        
       }
     
-      input[type=text]:focus{
+      {% comment %} input[type=text]:focus{
         border:none;
         outline:grey;
-      }
+      }    {% endcomment %}
  
       input[type=submit]{
         background-color: #4CAF50;
         border: none;
         color: white;
         padding: 10px 32px;
-        text-decoration: none;
-        {% comment %} margin: 15px 203px; {% endcomment %}
-        margin:auto;
-        display:flex;
-        justify-content:center;
+        text-decoration: none;  
         cursor: pointer;
+        float:center;
       }
     
     
       label, input {
           display: flex;
-          float: left;
+          justify-content:center;
       }
       
       .button1{
-        float:left;
-        border-radius: 25px;
-      
+        float:left
       }
     
       .button2{
-        display:flex;
-        border-radius: 25px;
+        float:right;
       }
     
       .button3{
         float:left;
-        border-radius: 25px;
       }
-     
+
       .button4{
-        display:flex;
-        border-radius: 25px;
+        float:right;
+        
       }
     
       .button5{
         float:left;
-        border-radius: 25px;
       }
+      
     
       .button6{
-        display:flex;
-        border-radius: 25px;
+        float:right
       }
     
     </style>
