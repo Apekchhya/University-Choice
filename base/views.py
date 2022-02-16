@@ -10,7 +10,7 @@ def home(request):
 
 def result(request):
     
-    model = pickle.load(open(r'C:\Users\sudee\Desktop\regression\picklefil.pkl','rb'))
+    model = pickle.load(open(r'picklefil.pkl','rb'))
     print(model)
     lis = []
     lis.append(float(request.GET.get('GRE_score', False)))
