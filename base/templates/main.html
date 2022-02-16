@@ -34,16 +34,19 @@
         line-height:15px;
         margin:10px;
         font-size:18px;
+        padding:10px
       }
       
       .container{
-          margin-top: 30px;
+          {% comment %} margin-top: 30px; {% endcomment %}
           margin-left: 400px;
           margin-right: 400px;
           background-color: white;
           -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.5);
           box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.5);
           padding: 30px 20px 90px 20px;
+          display:flex;
+          justify-content:center;
       }
     
       input[type=text]{
@@ -51,11 +54,13 @@
         border-radius:10px;
         height:30px;
         text-align:center;
-        margin: 20px 0px 20px 30px;
+        margin: 20px 10px 10px 10px;
         border-width:thin;
         background-color:white;
         border-color:lightgreen;
         text-color:black;
+        display:flex;
+        justify-content:center;
     
       }
     
@@ -70,7 +75,10 @@
         color: white;
         padding: 10px 32px;
         text-decoration: none;
-        margin: 15px 203px;
+        {% comment %} margin: 15px 203px; {% endcomment %}
+        margin:auto;
+        display:flex;
+        justify-content:center;
         cursor: pointer;
       }
     
