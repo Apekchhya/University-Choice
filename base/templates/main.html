@@ -1,124 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Predict Your Chance of Admission</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
-    
-    
-    <div>
-      <h3> Admission Prediction </h3>
-      <h4> Predict your chance of admission in your choice of university </h4>
-    </div>
+
+    <style><!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
 
     <style>
-      body{
-        background: linear-gradient(to right, #636363, #a2ab58);
-      }
-      
-      h3{
-        text-align:center;
-        color:white;
+      body {
+        background:#dfe4ea;
         font-family: 'Nunito', sans-serif;
-        line-height:15px;
-        margin-top:80px;
-        font-size:35px;
+        padding-top: 50px;
+        margin: 1000px
       }
+      .container {
+        max-width: 550px;
+        margin: 50px auto;
+        background-color: #fff;
+        -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+        box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+    }
+    .result{
+      font-family: 'Nunito', sans-serif;
+      text-align: center;
+      padding:40px;
+      color:#808080;
+     
+    }
+    .predict{
+      display: flex;
+      justify-content: center;
+      background-color: #fff;
+      -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+      box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+      padding:  20px 50px 50px 50px;
+    
+  
+  }
+ .header{
+    font-family: 'Nunito', sans-serif;
+    justify-content: center;
+     color: #fff;
+     padding: 10px;
+     border-radius: 5px 5px 0 0;
+     {% comment %} background: linear-gradient(90deg, #EEA390 0%, #EB796F 60%, #EB796F 100%); {% endcomment %}
 
-      h4{
-        text-align:center;
-        color:white;
-        font-family: 'Nunito', sans-serif;
-        line-height:15px;
-        margin:10px;
-        font-size:18px;
-        padding:10px
-      }
-      
-      .container{
-          {% comment %} margin-left:400px;
-          margin-right:400px; {% endcomment %}
-          {% comment %} margin:auto; {% endcomment %}
-          margin-left:30%;
-          margin-right:30%;
+     background: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+     display: flex;
+  } 
 
-          height:250px;
-          {% comment %} width:40%; {% endcomment %}
-          background-color: white;
-          align:center;
-          -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.5);
-          box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.5);
-          padding: 30px 5% 90px 5%;
-      }
-    
-      input[type=text]{
+  
+  input[type=submit]{
+    margin:auto;
+    display:flex;
+    justify-content:;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-decoration: none;  
+    cursor: pointer;
+  }
 
-        width:250px;
-        border-radius:10px;
-        height:30px;
-        text-align:center;
-        margin: 0% 0% 5% 0%;
-        border-width:thin;
-        background-color:white;
-        border-color:lightgreen;
-        
-      }
-    
-      {% comment %} input[type=text]:focus{
-        border:none;
-        outline:grey;
-      }    {% endcomment %}
- 
-      input[type=submit]{
-        background-color: #4CAF50;
-        border: none;
-        color: white;
-        padding: 10px 32px;
-        text-decoration: none;  
-        cursor: pointer;
-        float:right;
-      }
-    
-    
-      label, input {
-          display: flex;
-          float:left;
-      }
-{% comment %}       
-      .button1{
-        float:left
-      }
-    
-      .button2{
-        float:right;
-      }
-    
-      .button3{
-        float:left;
-      }
+  input[type=text]{
+    margin-top:50px;
+    width:200px;
+    border-radius:10px;
+    height:30px;
+    text-align:center;
+    margin: 0% 0% 5% 0%;
+    border-width:thin;
+    background-color:white;
+    border-color:lightgreen;
+  }
 
-      .button4{
-        float:right;
-        
-      }
-    
-      .button5{
-        float:left;
-      }
-      
-    
-      .button6{
-        float:right
-      }
-     {% endcomment %}
-    </style>
-    
-</head>
-<body>
-
-        {% block content %} {% endblock content %}
    
-</body>
-</html>
+
+    </style>
+  </head>
+
+  <body>
+  
+      <div class="container">
+          {% block content %} {% endblock content %}
+      </div>
+  
+  </body>
+  
+  
+  </html>

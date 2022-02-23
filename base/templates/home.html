@@ -1,45 +1,29 @@
 {% extends 'main.html' %}
 {% block content %}
 
-<div class="container">
-   
-    <form action = '{%url 'result' %}'>
+<div class = "header"> <h2>Predict Your Chance of Admission</h2></div>
+<div class = "predict">
+     <form action = '{%url 'result' %}'>
+        <br>
         {% csrf_token %}
-        <div class = 'button1'>
-            <label>
-                <input type='text' required name='GRE_score' placeholder="Enter your GRE score">
-            </label>
-        </div>
-        <div class = 'button2'>
-            <label>
-                <input type='text' required name='TOEFL_score' placeholder="Enter your TOEFL score">
-            </label>
-        </div>
-        <div class = "button3">
-            <label>
-                <input type='text' required name='university_rating' placeholder="Enter University Rating">
-            </label>
-        </div>
-        <div class = 'button4'>
-            <label>
-                <input type='text' required name='LOR_score' placeholder="Enter your LOR score">
-            </label>
-        </div>
-        <div class = 'button5'>
-            <label>
-                <input type='text' required name='SOP_score' placeholder="Enter your SOP score">
-            </label>
-        </div>
-        <div class = 'button6'>
-            <label>
-                <input type='text' required name='CGPA' placeholder="Enter your CGPA">
-            </label>
-        </div>  
-        <input type='submit' required name='predict' value = "Predict"/>
-    </form>
+		<input type = "text" required name = "gre" id="gre_score" placeholder = "Enter your GRE score">
+		&nbsp; &nbsp;&nbsp;
+		<input type="text" required name="toefl" id="toefl_score" placeholder="Enter your TOEFL score">
+		<br><br>
+		<input type="text" required name="toefl" id="toefl_score" placeholder="Enter your TOEFL score">
+		&nbsp; &nbsp;&nbsp;
+		<input type="text" required name="toefl" id="toefl_score" placeholder="Enter your TOEFL score">
+		<br><br>
+		<input type="text" required name="toefl" id="toefl_score" placeholder="Enter your TOEFL score">
+		&nbsp; &nbsp;&nbsp;
+		<input type="text" required name="toefl" id="toefl_score" placeholder="Enter your TOEFL score">
+		<br><br>
+		<input type="submit" required name="toefl" id="toefl_score" placeholder="Predict">
+
 
 
 </div>
+
 
 {%endblock content%}
 
