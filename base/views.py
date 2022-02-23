@@ -13,8 +13,8 @@ def result(request):
     model = pickle.load(open(r'picklefil.pkl','rb'))
     print(model)
     lis = []
-    lis.append(float(request.GET.get('GRE_score', False)))
-    lis.append(float(request.GET.get('TOEFL_score', False)))
+    lis.append(float(request.GET.get('gre', False)))
+    lis.append(float(request.GET.get('toefl', False)))
     lis.append(float(request.GET.get('university_rating', False)))
     lis.append(float(request.GET.get('SOP_score', False)))
     lis.append(float(request.GET.get('LOR_score', False)))
